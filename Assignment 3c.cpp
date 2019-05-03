@@ -1,19 +1,23 @@
 #include<stdio.h>
 int main(){
-	int number;
+	int nb;
 	printf("Hay nhap 1 so: ");
-	scanf("%d",&number);
+	scanf("%d",&nb);
+	if(nb<2){
+		printf("\n%d khong phai so nguyen to",nb);
+		return 0;
+	}
 	int i=1,j=0;
-	while(i<=number){
-		if(number%i==0){
+	while(i<=nb){
+		if(nb%i==0){
 			j++;
 			if(j>=3){
-				printf("%d khong phai so nguyen to",number);
+				printf("\n%d khong phai so nguyen to",nb);
 				return 0;
 			}
 		}
 		i++;
 	}
-	printf("%d la so nguyen to",number);	
+	printf("%d la so nguyen to",nb);	
 	return 0;
 }
