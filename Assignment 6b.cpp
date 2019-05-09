@@ -8,6 +8,7 @@ int main(void){
 		printf("Nhap so thu %d: ",i+1);
 		scanf("%d",&list[i]);
 	}
+	printf("Mang sau khi sap xep la:");
 	for(int i=0;i<n;i++){
 		for(int j=i+1;j<n;j++){
 			if(list[i]>list[j]){
@@ -16,9 +17,6 @@ int main(void){
 				list[j]=temp;
 			}
 		}
-	}
-	printf("Mang sau khi sap xep la:");
-	for(int i=0;i<n;i++){
 		printf(" %d",list[i]);
 	}
 	return 0;
