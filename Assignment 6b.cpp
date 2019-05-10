@@ -7,6 +7,12 @@ int main(void){
 	for(int i=0;i<n;i++){
 		printf("Nhap so thu %d: ",i+1);
 		scanf("%d",&list[i]);
+		for(int j=0;j<i;j++){
+			if(list[i]==list[j]){
+				printf("So bi trung, hay nhap lai\n");
+				i--;
+			}
+		}
 	}
 	printf("Mang sau khi sap xep la:");
 	for(int i=0;i<n;i++){
