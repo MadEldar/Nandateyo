@@ -6,6 +6,7 @@ int main(void){
 		scanf("%d",&list[i]);
 		sum+=list[i];
 	}
-	printf("Gia tri trung binh cua mang la: %d",sum/10);
+	float S=sum/10;
+	printf("Gia tri trung binh cua mang la: %0.1lf",S);
 	return 0;
 }
