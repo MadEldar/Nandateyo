@@ -3,6 +3,10 @@ int main(void){
 	int n;
 	printf("Nhap so luong phan tu cua mang: ");
 	scanf("%d",&n);
+	while(n<2){
+		printf("So luong qua thap, hay nhap lai: ");
+		scanf("%d",&n);
+	}
 	int list[n];
 	for(int i=0;i<n;i++){
 		printf("Nhap so thu %d: ",i+1);
