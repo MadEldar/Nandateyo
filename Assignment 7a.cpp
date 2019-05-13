@@ -2,7 +2,7 @@
 int main()
 {
 	int list[4][4];
-	int sumMax=0,hangMax;
+	int sumMax,hangMax;
 	for(int i=0;i<4;i++){
 		int sum=0;
 		for (int j = 0; j < 4; j++){
@@ -10,7 +10,7 @@ int main()
 			scanf("%d",&list[i][j]);
 			sum+=list[i][j];
 		}
-		if (sumMax<sum){
+		if (i==0||sumMax<sum){
 			sumMax=sum;
 			hangMax=i+1;
 		}
